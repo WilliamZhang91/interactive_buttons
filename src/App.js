@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import { GrFacebookOption } from "react-icons/gr";
+import { GrInstagram } from "react-icons/gr";
+import { GrTwitter } from "react-icons/gr";
+import { GrLinkedinOption } from "react-icons/gr";
+import { GrGithub } from "react-icons/gr";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="background">
+      <div className="background-color"></div>
+      <div className="background-color"></div>
+      <div className="background-color"></div>
+      <div>
+        <ul>
+          <li>
+            <div className="icons"><GrFacebookOption /></div>
+          </li>
+          <li>
+            <div className="icons"><GrInstagram /></div>
+          </li>
+          <li>
+            <div className="icons"><GrTwitter /></div>
+          </li>
+          <li>
+            <div className="icons"><GrLinkedinOption /></div>
+          </li>
+          <li>
+            <div className="icons"><GrGithub /></div>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
